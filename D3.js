@@ -114,8 +114,8 @@ const charactersNames = [];
 */
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  const names = starWarsCharacters[i].name;
-  charactersNames.push(names);
+  const names = starWarsCharacters[i];
+  charactersNames.push(names.name);
 }
 console.log(charactersNames);
 console.log("--------------------------");
@@ -152,201 +152,45 @@ const eyeColor = {
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
-switch (starWarsCharacters[0].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[0]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[0]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[0]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[0]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[0]);
-    break;
-}
 
-switch (starWarsCharacters[1].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[1]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[1]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[1]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[1]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[1]);
-    break;
-}
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  const character = starWarsCharacters[i];
 
-switch (starWarsCharacters[2].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[2]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[2]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[2]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[2]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[2]);
-    break;
-}
-
-switch (starWarsCharacters[3].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[3]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[3]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[3]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[3]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[3]);
-    break;
-}
-
-switch (starWarsCharacters[4].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[4]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[4]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[4]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[4]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[4]);
-    break;
-}
-
-switch (starWarsCharacters[5].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[5]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[5]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[5]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[5]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[5]);
-    break;
-}
-
-switch (starWarsCharacters[6].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[6]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[6]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[6]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[6]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[6]);
-    break;
-}
-
-switch (starWarsCharacters[7].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[7]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[7]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[7]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[7]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[7]);
-    break;
-}
-
-switch (starWarsCharacters[8].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[8]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[8]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[8]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[8]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[8]);
-    break;
-}
-
-switch (starWarsCharacters[9].eye_color) {
-  case "blue":
-    eyeColor.blue.push(starWarsCharacters[9]);
-    break;
-  case "yellow":
-    eyeColor.yellow.push(starWarsCharacters[9]);
-    break;
-  case "brown":
-    eyeColor.brown.push(starWarsCharacters[9]);
-    break;
-  case "red":
-    eyeColor.red.push(starWarsCharacters[9]);
-    break;
-  case "blue-gray":
-    eyeColor["blue-gray"].push(starWarsCharacters[9]);
-    break;
+  switch (character.eye_color) {
+    case "blue":
+      eyeColor.blue.push(character);
+      break;
+    case "yellow":
+      eyeColor.yellow.push(character);
+      break;
+    case "brown":
+      eyeColor.brown.push(character);
+      break;
+    case "red":
+      eyeColor.red.push(character);
+      break;
+    case "blue-gray":
+      eyeColor["blue-gray"].push(character);
+      break;
+  }
 }
 console.log(eyeColor);
 console.log("--------------------------");
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
-// let crewMass = 0;
-// let i = 0;
+let crewMass = 0;
+let i = 0;
 
-// while (i < starWarsCharacters.length) {
-//   crewMass += starWarsCharacters[i].mass;
+while (i < starWarsCharacters.length) {
+  const character = starWarsCharacters[i];
+  crewMass += character.mass;
 
-//   i++;
-// }
-// console.log(crewMass);
+  i++;
+}
+console.log(crewMass);
 
-const crewMass = 957;
+// const crewMass = 957;
 console.log("--------------------------");
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
@@ -376,17 +220,40 @@ console.log("--------------------------");
 */
 
 for (let i = 0; i < 10; i++) {
-  if (starWarsCharacters[i].gender == "n/a") {
-    starWarsCharacters[i].gender = "robot";
+  const character = starWarsCharacters[i];
+
+  if (character.gender === "n/a") {
+    character.gender = "robot";
   }
 }
 console.log(starWarsCharacters);
 console.log("--------------------------");
+
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
+for (let j = 0; j < femaleCharacters.length; j++) {
+  const femalecharobj = femaleCharacters[j];
 
-/* --EXTRA-- ESERCIZIO 10
-  Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
-*/
+  for (let i = 0; i < charactersNames.length; i++) {
+    const str = charactersNames[i];
+    if (str === femalecharobj.name) {
+      charactersNames.splice(i, 1);
+    }
+  }
+}
+console.log(charactersNames);
+
+/* --E-- ESERCIZIO 10
+   una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e
+    ne stampi in console le proprietà in modo discorsivo (a tustrmentocharactersNa */
+// math.floor(Math.randon () * 10)    math.ceil(Math.randon () * 10)
+
+const randomIndex = Math.floor(Math.random() * starWarsCharacters.length);
+
+console.log(randomIndex);
+
+const randomChar = starWarsCharacters[randomIndex];
+
+console.log(`Ciao sono ${randomChar.name},sono alto ${randomChar.height} e ho gli occhi ${randomChar.eye_color}`);
